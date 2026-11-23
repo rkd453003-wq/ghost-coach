@@ -113,7 +113,7 @@ const Player = forwardRef(function Player({ jersey, ink, skin = "#b6aa9d", numbe
     <group ref={ref}>
       <mesh position={[0, 0.03, 0]} rotation-x={-Math.PI / 2}>
         <circleGeometry args={[1.2, 32]} />
-        <meshBasicMaterial color={highlight ? "#ffd166" : "#000000"} transparent opacity={highlight ? 0.75 : 0.22} depthWrite={false} />
+        <meshBasicMaterial color={highlight ? "#ffd43b" : "#000000"} transparent opacity={highlight ? 0.75 : 0.22} depthWrite={false} />
       </mesh>
 
       <group scale={scale}>

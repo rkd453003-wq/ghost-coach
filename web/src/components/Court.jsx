@@ -33,7 +33,7 @@ export default function Court() {
       {/* apron */}
       <mesh rotation-x={-Math.PI / 2} position={[0, -0.02, 22]} receiveShadow>
         <planeGeometry args={[70, 66]} />
-        <meshStandardMaterial color="#1b2230" />
+        <meshStandardMaterial color="#232d52" />
       </mesh>
       {/* hardwood */}
       <mesh rotation-x={-Math.PI / 2} position={[0, 0, 23.5]} receiveShadow>

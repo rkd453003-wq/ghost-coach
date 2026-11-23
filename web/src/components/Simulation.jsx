@@ -11,10 +11,10 @@ import { frameAt, totalDuration } from "../sim/timeline.js";
 import { computePose } from "../sim/pose.js";
 
 const SLOTS = [1, 2, 3, 4, 5];
-const OFFENSE_COLOR = "#eef1f5";
-const OFFENSE_INK = "#1d2a44";
-const DEFENSE_COLOR = "#2f5fa7";
-const DEFENSE_INK = "#f4f6fa";
+const OFFENSE_COLOR = "#d8333a";
+const OFFENSE_INK = "#ffffff";
+const DEFENSE_COLOR = "#2457c5";
+const DEFENSE_INK = "#ffffff";
 const VEL_DT = 0.06; // seconds of sim time used to measure each player's velocity
 const TYPICAL_HEIGHT = { PG: 75, SG: 77, SF: 79, PF: 81, C: 83 }; // inches
 const FIGURE_HEIGHT = 77.5; // the rig's height in inches at scale 1
@@ -199,8 +199,8 @@ export default function Simulation({ play, coverage, offense, defense, result, t
 
   return (
     <>
-      <color attach="background" args={["#0d1118"]} />
-      <fog attach="fog" args={["#0d1118", 90, 160]} />
+      <color attach="background" args={["#1a2240"]} />
+      <fog attach="fog" args={["#1a2240", 90, 160]} />
       <hemisphereLight args={["#e6ecf7", "#4a3424", 0.95]} />
       <ambientLight intensity={0.25} />
       <directionalLight position={[20, 60, 30]} intensity={1.6} castShadow shadow-mapSize={[2048, 2048]}
@@ -211,13 +211,13 @@ export default function Simulation({ play, coverage, offense, defense, result, t
       <Court />
 
       {paths.map((pts, i) => (
-        <Line key={`path${i}`} points={pts} color="#ffd166" lineWidth={1.5} dashed dashSize={0.8} gapSize={0.6} transparent opacity={0.55} />
+        <Line key={`path${i}`} points={pts} color="#ffffff" lineWidth={1.6} dashed dashSize={0.8} gapSize={0.6} transparent opacity={0.5} />
       ))}
 
       {optionSpots.map((o) => (
         <mesh key={o.slot} position={[o.spot[0], 0.06, o.spot[1]]} rotation-x={-Math.PI / 2}>
           <ringGeometry args={[1.4, 1.75, 40]} />
-          <meshBasicMaterial color={o.slot === best.slot ? "#ffd166" : "#ffffff"} transparent opacity={o.slot === best.slot ? 0.95 : 0.35} />
+          <meshBasicMaterial color={o.slot === best.slot ? "#ffd43b" : "#ffffff"} transparent opacity={o.slot === best.slot ? 0.95 : 0.35} />
         </mesh>
       ))}
 
