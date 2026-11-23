@@ -2,7 +2,7 @@
 
 **Run a basketball play against any defence in 3D and see which read wins.**
 
-Pick an offence and a defence, choose a play, and watch ten players run it on a 3D half court. The defence reacts the way that team guards ball screens (drop, switch or hedge). At the end, Ghost Coach scores every shot the play creates and highlights the best read. A ranking shows how the same play does against every other team, and a "what if they switch?" control lets a coach test a different coverage.
+Pick an offence and a defence, choose a play, and watch ten jointed 3D athletes run it on a half court: sized by real height, sprinting, sliding in a defensive stance, dribbling and rising into a jump shot. The defence reacts the way that team guards ball screens (drop, switch or hedge). At the end, Ghost Coach scores every shot the play creates and highlights the best read. A ranking shows how the same play does against every other team, and a "what if they switch?" control lets a coach test a different coverage.
 
 ![Ghost Coach: high pick-and-roll vs a hedge, overhead view](docs/screenshot-overhead.png)
 
@@ -43,7 +43,7 @@ The highest is the best read. All of this is in `web/src/sim/engine.js` and cove
 
 ## Honest limits
 
-- Players move along designed paths, not real tracking data. Full player-tracking data (every player's position 25 times a second) isn't public. What *is* real, once you run the fetch script, is where each player scores and how well, and how each defender and team defends.
+- Players move along designed paths, and their running, sliding, dribbling and shooting motions are generated procedurally (`web/src/sim/pose.js`), not motion-captured. Figures are deliberately generic, with no real faces or likenesses. Full player-tracking data (every player's position 25 times a second) isn't public. What *is* real, once you run the fetch script, is where each player scores and how well, and how each defender and team defends.
 - Coverages are inputs, not detected. A team's coverage is a setting you choose.
 - The contest curve and closeout distance are modelling assumptions, tuned to look like public closest-defender splits. They're constants at the top of `engine.js` and easy to change.
 
@@ -73,8 +73,8 @@ Then restart `npm run dev`. The "Sample data" badge disappears and the tags show
 ## Project layout
 
 ```
-web/src/sim/        court geometry, plays, defence, outcome model, timeline (+ tests)
-web/src/components/ 3D court, player figures, the animated scene
+web/src/sim/        court geometry, plays, defence, outcome model, timeline, body animation (+ tests)
+web/src/components/ 3D court, jointed player rig, the animated scene
 web/src/App.jsx     controls, best read, opponent ranking
 data/               real-data fetch script, coverages, sample data generator (+ tests)
 docs/               planning, AI-assisted development log

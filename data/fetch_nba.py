@@ -98,6 +98,15 @@ def defender_rating(pct_plusminus: float | None) -> float:
     return round(min(1.15, max(0.85, 1 + float(pct_plusminus))), 3)
 
 
+def height_inches(text: str | None) -> int | None:
+    """Roster height like "6-8" -> 80 inches."""
+    try:
+        feet, inches = str(text).split("-")
+        return int(feet) * 12 + int(inches)
+    except (AttributeError, ValueError):
+        return None
+
+
 def order_lineup(players: list[dict]) -> list[dict]:
     """Five players -> slot order 1..5 by listed position, guards first."""
     return sorted(players, key=lambda p: POSITION_ORDER.get(p["position"], 3))
@@ -153,7 +162,9 @@ def fetch(season: str, abbrs: list[str]) -> dict:
         time.sleep(PAUSE)
         top = sorted((s for s in stats if s["PLAYER_ID"] in roster), key=lambda s: s["MIN"], reverse=True)[:5]
         lineup = order_lineup([{"id": s["PLAYER_ID"], "name": s["PLAYER_NAME"],
-                                "position": roster[s["PLAYER_ID"]].get("POSITION") or "F"} for s in top])
+                                "position": roster[s["PLAYER_ID"]].get("POSITION") or "F",
+                                "num": roster[s["PLAYER_ID"]].get("NUM"),
+                                "height": height_inches(roster[s["PLAYER_ID"]].get("HEIGHT"))} for s in top])
 
         players = []
         for slot, p in enumerate(lineup, start=1):
@@ -167,6 +178,8 @@ def fetch(season: str, abbrs: list[str]) -> dict:
                 "slot": slot,
                 "name": p["name"],
                 "pos": SLOT_POS[slot],
+                "num": str(p["num"]) if p.get("num") not in (None, "") else str(slot),
+                "height": p.get("height"),
                 "zones": zone_stats(frames[0].to_dict("records")),
                 "def": {"perimeter": d.get("perimeter", 1.0), "interior": d.get("interior", 1.0)},
             })

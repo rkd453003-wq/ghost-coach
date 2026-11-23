@@ -1,6 +1,7 @@
 """Offline tests for the parsing in fetch_nba.py (no network needed)."""
 from fetch_nba import (
     defender_rating,
+    height_inches,
     league_from_averages,
     order_lineup,
     parse_team_shot_locations,
@@ -56,3 +57,10 @@ def test_defender_rating_is_clamped():
 def test_lineup_orders_guards_first():
     players = [{"position": "C"}, {"position": "G"}, {"position": "F"}, {"position": "G-F"}, {"position": "F-C"}]
     assert [p["position"] for p in order_lineup(players)] == ["G", "G-F", "F", "F-C", "C"]
+
+
+def test_height_inches():
+    assert height_inches("6-8") == 80
+    assert height_inches("7-0") == 84
+    assert height_inches(None) is None
+    assert height_inches("") is None

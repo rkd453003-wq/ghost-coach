@@ -55,9 +55,9 @@ export function ballState(play, t) {
   const hs = holders(play);
   const from = hs[i];
   const to = hs[i + 1];
-  if (from === to || s < 0.5) return { pos: off[from], holder: from, inAir: 0 };
+  if (from === to || s < 0.5) return { pos: off[from], holder: from, to: from, inAir: 0 };
   const k = (s - 0.5) / 0.5; // pass travels in the second half of the phase
-  return { pos: lerp2(off[from], off[to], k), holder: k >= 1 ? to : null, inAir: Math.sin(Math.PI * k) };
+  return { pos: lerp2(off[from], off[to], k), holder: k >= 1 ? to : null, to, inAir: Math.sin(Math.PI * k) };
 }
 
 export const finalHolder = (play) => holders(play).at(-1);
