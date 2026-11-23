@@ -1,0 +1,9 @@
+{
+  "_note": "How each team usually guards ball screens: drop, switch or hedge. Public stats don't include this, so set it from film or scouting. These defaults are placeholders.",
+  "TOR": "drop",
+  "MIA": "switch",
+  "BOS": "switch",
+  "NYK": "drop",
+  "CLE": "drop",
+  "MIL": "hedge"
+}

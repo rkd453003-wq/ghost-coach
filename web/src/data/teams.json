@@ -1,0 +1,1021 @@
+{
+ "source": "sample",
+ "season": "sample",
+ "league": {
+  "RA": 0.655,
+  "PAINT": 0.435,
+  "MID": 0.415,
+  "CORNER3": 0.385,
+  "ATB3": 0.355
+ },
+ "teams": {
+  "TOR": {
+   "name": "Toronto",
+   "coverage": "drop",
+   "allowed": {
+    "RA": 0.651,
+    "PAINT": 0.43,
+    "MID": 0.419,
+    "CORNER3": 0.385,
+    "ATB3": 0.336
+   },
+   "players": [
+    {
+     "slot": 1,
+     "name": "TOR PG",
+     "pos": "PG",
+     "zones": {
+      "RA": {
+       "fg": 0.625,
+       "att": 140
+      },
+      "PAINT": {
+       "fg": 0.405,
+       "att": 120
+      },
+      "MID": {
+       "fg": 0.413,
+       "att": 160
+      },
+      "CORNER3": {
+       "fg": 0.323,
+       "att": 30
+      },
+      "ATB3": {
+       "fg": 0.302,
+       "att": 380
+      }
+     },
+     "def": {
+      "perimeter": 0.976,
+      "interior": 1.083
+     }
+    },
+    {
+     "slot": 2,
+     "name": "TOR SG",
+     "pos": "SG",
+     "zones": {
+      "RA": {
+       "fg": 0.681,
+       "att": 110
+      },
+      "PAINT": {
+       "fg": 0.476,
+       "att": 80
+      },
+      "MID": {
+       "fg": 0.459,
+       "att": 110
+      },
+      "CORNER3": {
+       "fg": 0.428,
+       "att": 90
+      },
+      "ATB3": {
+       "fg": 0.385,
+       "att": 330
+      }
+     },
+     "def": {
+      "perimeter": 0.964,
+      "interior": 1.077
+     }
+    },
+    {
+     "slot": 3,
+     "name": "TOR SF",
+     "pos": "SF",
+     "zones": {
+      "RA": {
+       "fg": 0.649,
+       "att": 150
+      },
+      "PAINT": {
+       "fg": 0.4,
+       "att": 90
+      },
+      "MID": {
+       "fg": 0.409,
+       "att": 90
+      },
+      "CORNER3": {
+       "fg": 0.369,
+       "att": 110
+      },
+      "ATB3": {
+       "fg": 0.338,
+       "att": 240
+      }
+     },
+     "def": {
+      "perimeter": 0.963,
+      "interior": 1.005
+     }
+    },
+    {
+     "slot": 4,
+     "name": "TOR PF",
+     "pos": "PF",
+     "zones": {
+      "RA": {
+       "fg": 0.728,
+       "att": 210
+      },
+      "PAINT": {
+       "fg": 0.498,
+       "att": 110
+      },
+      "MID": {
+       "fg": 0.493,
+       "att": 70
+      },
+      "CORNER3": {
+       "fg": 0.424,
+       "att": 60
+      },
+      "ATB3": {
+       "fg": 0.359,
+       "att": 180
+      }
+     },
+     "def": {
+      "perimeter": 1.02,
+      "interior": 0.973
+     }
+    },
+    {
+     "slot": 5,
+     "name": "TOR C",
+     "pos": "C",
+     "zones": {
+      "RA": {
+       "fg": 0.635,
+       "att": 330
+      },
+      "PAINT": {
+       "fg": 0.448,
+       "att": 140
+      },
+      "MID": {
+       "fg": 0.415,
+       "att": 40
+      },
+      "CORNER3": {
+       "fg": 0.375,
+       "att": 5
+      },
+      "ATB3": {
+       "fg": 0.3,
+       "att": 40
+      }
+     },
+     "def": {
+      "perimeter": 1.083,
+      "interior": 0.912
+     }
+    }
+   ]
+  },
+  "MIA": {
+   "name": "Miami",
+   "coverage": "switch",
+   "allowed": {
+    "RA": 0.66,
+    "PAINT": 0.433,
+    "MID": 0.416,
+    "CORNER3": 0.384,
+    "ATB3": 0.376
+   },
+   "players": [
+    {
+     "slot": 1,
+     "name": "MIA PG",
+     "pos": "PG",
+     "zones": {
+      "RA": {
+       "fg": 0.676,
+       "att": 140
+      },
+      "PAINT": {
+       "fg": 0.444,
+       "att": 120
+      },
+      "MID": {
+       "fg": 0.415,
+       "att": 160
+      },
+      "CORNER3": {
+       "fg": 0.419,
+       "att": 30
+      },
+      "ATB3": {
+       "fg": 0.336,
+       "att": 380
+      }
+     },
+     "def": {
+      "perimeter": 0.965,
+      "interior": 1.106
+     }
+    },
+    {
+     "slot": 2,
+     "name": "MIA SG",
+     "pos": "SG",
+     "zones": {
+      "RA": {
+       "fg": 0.655,
+       "att": 110
+      },
+      "PAINT": {
+       "fg": 0.395,
+       "att": 80
+      },
+      "MID": {
+       "fg": 0.391,
+       "att": 110
+      },
+      "CORNER3": {
+       "fg": 0.354,
+       "att": 90
+      },
+      "ATB3": {
+       "fg": 0.317,
+       "att": 330
+      }
+     },
+     "def": {
+      "perimeter": 0.992,
+      "interior": 1.093
+     }
+    },
+    {
+     "slot": 3,
+     "name": "MIA SF",
+     "pos": "SF",
+     "zones": {
+      "RA": {
+       "fg": 0.633,
+       "att": 150
+      },
+      "PAINT": {
+       "fg": 0.401,
+       "att": 90
+      },
+      "MID": {
+       "fg": 0.382,
+       "att": 90
+      },
+      "CORNER3": {
+       "fg": 0.332,
+       "att": 110
+      },
+      "ATB3": {
+       "fg": 0.354,
+       "att": 240
+      }
+     },
+     "def": {
+      "perimeter": 0.988,
+      "interior": 1.017
+     }
+    },
+    {
+     "slot": 4,
+     "name": "MIA PF",
+     "pos": "PF",
+     "zones": {
+      "RA": {
+       "fg": 0.687,
+       "att": 210
+      },
+      "PAINT": {
+       "fg": 0.472,
+       "att": 110
+      },
+      "MID": {
+       "fg": 0.416,
+       "att": 70
+      },
+      "CORNER3": {
+       "fg": 0.387,
+       "att": 60
+      },
+      "ATB3": {
+       "fg": 0.366,
+       "att": 180
+      }
+     },
+     "def": {
+      "perimeter": 1.018,
+      "interior": 0.988
+     }
+    },
+    {
+     "slot": 5,
+     "name": "MIA C",
+     "pos": "C",
+     "zones": {
+      "RA": {
+       "fg": 0.653,
+       "att": 330
+      },
+      "PAINT": {
+       "fg": 0.466,
+       "att": 140
+      },
+      "MID": {
+       "fg": 0.41,
+       "att": 40
+      },
+      "CORNER3": {
+       "fg": 0.369,
+       "att": 5
+      },
+      "ATB3": {
+       "fg": 0.337,
+       "att": 40
+      }
+     },
+     "def": {
+      "perimeter": 1.042,
+      "interior": 0.929
+     }
+    }
+   ]
+  },
+  "BOS": {
+   "name": "Boston",
+   "coverage": "switch",
+   "allowed": {
+    "RA": 0.659,
+    "PAINT": 0.448,
+    "MID": 0.437,
+    "CORNER3": 0.385,
+    "ATB3": 0.366
+   },
+   "players": [
+    {
+     "slot": 1,
+     "name": "BOS PG",
+     "pos": "PG",
+     "zones": {
+      "RA": {
+       "fg": 0.635,
+       "att": 140
+      },
+      "PAINT": {
+       "fg": 0.417,
+       "att": 120
+      },
+      "MID": {
+       "fg": 0.422,
+       "att": 160
+      },
+      "CORNER3": {
+       "fg": 0.39,
+       "att": 30
+      },
+      "ATB3": {
+       "fg": 0.34,
+       "att": 380
+      }
+     },
+     "def": {
+      "perimeter": 0.994,
+      "interior": 1.1
+     }
+    },
+    {
+     "slot": 2,
+     "name": "BOS SG",
+     "pos": "SG",
+     "zones": {
+      "RA": {
+       "fg": 0.674,
+       "att": 110
+      },
+      "PAINT": {
+       "fg": 0.388,
+       "att": 80
+      },
+      "MID": {
+       "fg": 0.415,
+       "att": 110
+      },
+      "CORNER3": {
+       "fg": 0.393,
+       "att": 90
+      },
+      "ATB3": {
+       "fg": 0.342,
+       "att": 330
+      }
+     },
+     "def": {
+      "perimeter": 0.977,
+      "interior": 1.098
+     }
+    },
+    {
+     "slot": 3,
+     "name": "BOS SF",
+     "pos": "SF",
+     "zones": {
+      "RA": {
+       "fg": 0.72,
+       "att": 150
+      },
+      "PAINT": {
+       "fg": 0.471,
+       "att": 90
+      },
+      "MID": {
+       "fg": 0.418,
+       "att": 90
+      },
+      "CORNER3": {
+       "fg": 0.404,
+       "att": 110
+      },
+      "ATB3": {
+       "fg": 0.392,
+       "att": 240
+      }
+     },
+     "def": {
+      "perimeter": 0.956,
+      "interior": 1.035
+     }
+    },
+    {
+     "slot": 4,
+     "name": "BOS PF",
+     "pos": "PF",
+     "zones": {
+      "RA": {
+       "fg": 0.644,
+       "att": 210
+      },
+      "PAINT": {
+       "fg": 0.389,
+       "att": 110
+      },
+      "MID": {
+       "fg": 0.368,
+       "att": 70
+      },
+      "CORNER3": {
+       "fg": 0.384,
+       "att": 60
+      },
+      "ATB3": {
+       "fg": 0.382,
+       "att": 180
+      }
+     },
+     "def": {
+      "perimeter": 1.005,
+      "interior": 0.988
+     }
+    },
+    {
+     "slot": 5,
+     "name": "BOS C",
+     "pos": "C",
+     "zones": {
+      "RA": {
+       "fg": 0.645,
+       "att": 330
+      },
+      "PAINT": {
+       "fg": 0.435,
+       "att": 140
+      },
+      "MID": {
+       "fg": 0.431,
+       "att": 40
+      },
+      "CORNER3": {
+       "fg": 0.378,
+       "att": 5
+      },
+      "ATB3": {
+       "fg": 0.346,
+       "att": 40
+      }
+     },
+     "def": {
+      "perimeter": 1.049,
+      "interior": 0.909
+     }
+    }
+   ]
+  },
+  "NYK": {
+   "name": "New York",
+   "coverage": "drop",
+   "allowed": {
+    "RA": 0.64,
+    "PAINT": 0.456,
+    "MID": 0.392,
+    "CORNER3": 0.387,
+    "ATB3": 0.372
+   },
+   "players": [
+    {
+     "slot": 1,
+     "name": "NYK PG",
+     "pos": "PG",
+     "zones": {
+      "RA": {
+       "fg": 0.604,
+       "att": 140
+      },
+      "PAINT": {
+       "fg": 0.413,
+       "att": 120
+      },
+      "MID": {
+       "fg": 0.422,
+       "att": 160
+      },
+      "CORNER3": {
+       "fg": 0.386,
+       "att": 30
+      },
+      "ATB3": {
+       "fg": 0.326,
+       "att": 380
+      }
+     },
+     "def": {
+      "perimeter": 0.945,
+      "interior": 1.09
+     }
+    },
+    {
+     "slot": 2,
+     "name": "NYK SG",
+     "pos": "SG",
+     "zones": {
+      "RA": {
+       "fg": 0.712,
+       "att": 110
+      },
+      "PAINT": {
+       "fg": 0.503,
+       "att": 80
+      },
+      "MID": {
+       "fg": 0.434,
+       "att": 110
+      },
+      "CORNER3": {
+       "fg": 0.413,
+       "att": 90
+      },
+      "ATB3": {
+       "fg": 0.414,
+       "att": 330
+      }
+     },
+     "def": {
+      "perimeter": 0.981,
+      "interior": 1.052
+     }
+    },
+    {
+     "slot": 3,
+     "name": "NYK SF",
+     "pos": "SF",
+     "zones": {
+      "RA": {
+       "fg": 0.585,
+       "att": 150
+      },
+      "PAINT": {
+       "fg": 0.427,
+       "att": 90
+      },
+      "MID": {
+       "fg": 0.34,
+       "att": 90
+      },
+      "CORNER3": {
+       "fg": 0.334,
+       "att": 110
+      },
+      "ATB3": {
+       "fg": 0.304,
+       "att": 240
+      }
+     },
+     "def": {
+      "perimeter": 0.996,
+      "interior": 0.992
+     }
+    },
+    {
+     "slot": 4,
+     "name": "NYK PF",
+     "pos": "PF",
+     "zones": {
+      "RA": {
+       "fg": 0.642,
+       "att": 210
+      },
+      "PAINT": {
+       "fg": 0.42,
+       "att": 110
+      },
+      "MID": {
+       "fg": 0.402,
+       "att": 70
+      },
+      "CORNER3": {
+       "fg": 0.356,
+       "att": 60
+      },
+      "ATB3": {
+       "fg": 0.392,
+       "att": 180
+      }
+     },
+     "def": {
+      "perimeter": 1.034,
+      "interior": 0.988
+     }
+    },
+    {
+     "slot": 5,
+     "name": "NYK C",
+     "pos": "C",
+     "zones": {
+      "RA": {
+       "fg": 0.629,
+       "att": 330
+      },
+      "PAINT": {
+       "fg": 0.402,
+       "att": 140
+      },
+      "MID": {
+       "fg": 0.374,
+       "att": 40
+      },
+      "CORNER3": {
+       "fg": 0.365,
+       "att": 5
+      },
+      "ATB3": {
+       "fg": 0.342,
+       "att": 40
+      }
+     },
+     "def": {
+      "perimeter": 1.044,
+      "interior": 0.914
+     }
+    }
+   ]
+  },
+  "CLE": {
+   "name": "Cleveland",
+   "coverage": "drop",
+   "allowed": {
+    "RA": 0.638,
+    "PAINT": 0.438,
+    "MID": 0.419,
+    "CORNER3": 0.387,
+    "ATB3": 0.335
+   },
+   "players": [
+    {
+     "slot": 1,
+     "name": "CLE PG",
+     "pos": "PG",
+     "zones": {
+      "RA": {
+       "fg": 0.672,
+       "att": 140
+      },
+      "PAINT": {
+       "fg": 0.406,
+       "att": 120
+      },
+      "MID": {
+       "fg": 0.428,
+       "att": 160
+      },
+      "CORNER3": {
+       "fg": 0.411,
+       "att": 30
+      },
+      "ATB3": {
+       "fg": 0.321,
+       "att": 380
+      }
+     },
+     "def": {
+      "perimeter": 0.972,
+      "interior": 1.097
+     }
+    },
+    {
+     "slot": 2,
+     "name": "CLE SG",
+     "pos": "SG",
+     "zones": {
+      "RA": {
+       "fg": 0.693,
+       "att": 110
+      },
+      "PAINT": {
+       "fg": 0.409,
+       "att": 80
+      },
+      "MID": {
+       "fg": 0.444,
+       "att": 110
+      },
+      "CORNER3": {
+       "fg": 0.378,
+       "att": 90
+      },
+      "ATB3": {
+       "fg": 0.35,
+       "att": 330
+      }
+     },
+     "def": {
+      "perimeter": 0.975,
+      "interior": 1.045
+     }
+    },
+    {
+     "slot": 3,
+     "name": "CLE SF",
+     "pos": "SF",
+     "zones": {
+      "RA": {
+       "fg": 0.627,
+       "att": 150
+      },
+      "PAINT": {
+       "fg": 0.4,
+       "att": 90
+      },
+      "MID": {
+       "fg": 0.399,
+       "att": 90
+      },
+      "CORNER3": {
+       "fg": 0.392,
+       "att": 110
+      },
+      "ATB3": {
+       "fg": 0.333,
+       "att": 240
+      }
+     },
+     "def": {
+      "perimeter": 0.978,
+      "interior": 1.01
+     }
+    },
+    {
+     "slot": 4,
+     "name": "CLE PF",
+     "pos": "PF",
+     "zones": {
+      "RA": {
+       "fg": 0.623,
+       "att": 210
+      },
+      "PAINT": {
+       "fg": 0.457,
+       "att": 110
+      },
+      "MID": {
+       "fg": 0.437,
+       "att": 70
+      },
+      "CORNER3": {
+       "fg": 0.409,
+       "att": 60
+      },
+      "ATB3": {
+       "fg": 0.381,
+       "att": 180
+      }
+     },
+     "def": {
+      "perimeter": 1.014,
+      "interior": 0.997
+     }
+    },
+    {
+     "slot": 5,
+     "name": "CLE C",
+     "pos": "C",
+     "zones": {
+      "RA": {
+       "fg": 0.697,
+       "att": 330
+      },
+      "PAINT": {
+       "fg": 0.458,
+       "att": 140
+      },
+      "MID": {
+       "fg": 0.468,
+       "att": 40
+      },
+      "CORNER3": {
+       "fg": 0.443,
+       "att": 5
+      },
+      "ATB3": {
+       "fg": 0.399,
+       "att": 40
+      }
+     },
+     "def": {
+      "perimeter": 1.098,
+      "interior": 0.911
+     }
+    }
+   ]
+  },
+  "MIL": {
+   "name": "Milwaukee",
+   "coverage": "hedge",
+   "allowed": {
+    "RA": 0.646,
+    "PAINT": 0.421,
+    "MID": 0.413,
+    "CORNER3": 0.409,
+    "ATB3": 0.374
+   },
+   "players": [
+    {
+     "slot": 1,
+     "name": "MIL PG",
+     "pos": "PG",
+     "zones": {
+      "RA": {
+       "fg": 0.677,
+       "att": 140
+      },
+      "PAINT": {
+       "fg": 0.458,
+       "att": 120
+      },
+      "MID": {
+       "fg": 0.409,
+       "att": 160
+      },
+      "CORNER3": {
+       "fg": 0.386,
+       "att": 30
+      },
+      "ATB3": {
+       "fg": 0.354,
+       "att": 380
+      }
+     },
+     "def": {
+      "perimeter": 0.973,
+      "interior": 1.056
+     }
+    },
+    {
+     "slot": 2,
+     "name": "MIL SG",
+     "pos": "SG",
+     "zones": {
+      "RA": {
+       "fg": 0.672,
+       "att": 110
+      },
+      "PAINT": {
+       "fg": 0.39,
+       "att": 80
+      },
+      "MID": {
+       "fg": 0.411,
+       "att": 110
+      },
+      "CORNER3": {
+       "fg": 0.387,
+       "att": 90
+      },
+      "ATB3": {
+       "fg": 0.354,
+       "att": 330
+      }
+     },
+     "def": {
+      "perimeter": 0.961,
+      "interior": 1.078
+     }
+    },
+    {
+     "slot": 3,
+     "name": "MIL SF",
+     "pos": "SF",
+     "zones": {
+      "RA": {
+       "fg": 0.638,
+       "att": 150
+      },
+      "PAINT": {
+       "fg": 0.463,
+       "att": 90
+      },
+      "MID": {
+       "fg": 0.399,
+       "att": 90
+      },
+      "CORNER3": {
+       "fg": 0.371,
+       "att": 110
+      },
+      "ATB3": {
+       "fg": 0.336,
+       "att": 240
+      }
+     },
+     "def": {
+      "perimeter": 0.954,
+      "interior": 1.015
+     }
+    },
+    {
+     "slot": 4,
+     "name": "MIL PF",
+     "pos": "PF",
+     "zones": {
+      "RA": {
+       "fg": 0.709,
+       "att": 210
+      },
+      "PAINT": {
+       "fg": 0.46,
+       "att": 110
+      },
+      "MID": {
+       "fg": 0.408,
+       "att": 70
+      },
+      "CORNER3": {
+       "fg": 0.385,
+       "att": 60
+      },
+      "ATB3": {
+       "fg": 0.349,
+       "att": 180
+      }
+     },
+     "def": {
+      "perimeter": 1.007,
+      "interior": 0.981
+     }
+    },
+    {
+     "slot": 5,
+     "name": "MIL C",
+     "pos": "C",
+     "zones": {
+      "RA": {
+       "fg": 0.696,
+       "att": 330
+      },
+      "PAINT": {
+       "fg": 0.429,
+       "att": 140
+      },
+      "MID": {
+       "fg": 0.443,
+       "att": 40
+      },
+      "CORNER3": {
+       "fg": 0.4,
+       "att": 5
+      },
+      "ATB3": {
+       "fg": 0.373,
+       "att": 40
+      }
+     },
+     "def": {
+      "perimeter": 1.077,
+      "interior": 0.945
+     }
+    }
+   ]
+  }
+ }
+}
